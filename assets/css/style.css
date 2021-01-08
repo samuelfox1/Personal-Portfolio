@@ -1,22 +1,12 @@
 /* GLOBAL ITEMS */
 body {
-    /* background: rgb(233, 255, 243); */
     background-image: url("https://images.squarespace-cdn.com/content/v1/57d03133440243d64e967f10/1473734795705-EVO6AOQOQPWPO6F8NDTP/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UbeDbaZv1s3QfpIA4TYnL5Qao8BosUKjCVjCf8TKewJIH3bqxw7fF48mhrq5Ulr0Hg/Background.png?format=2500w");
     font-size: 1rem;
     color: rgb(214, 214, 214);
-    /* text-align: left; */
-    min-height: 100vh;
+    text-align: center;
 }
 
-.bg-color {
-    background-color: rgb(107, 107, 112) !important;
-}
-
-a {
-    cursor: pointer;
-}
-
-/* NAV BAR ITEMS */
+/* NAV BAR */
 
 /* centers nav items vertically */
 .nav-container {
@@ -24,6 +14,16 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.bg-color {
+    background-color: rgb(107, 107, 112) !important;
+}
+
+/* BUTTON & LINK BEHAVIOR */
+a:hover {
+    cursor: pointer;
+    color: rgba(230, 89, 230, 0.842);
 }
 
 .link-btn {
@@ -43,9 +43,9 @@ a {
 }
 
 /* nav buttons and footer buttons */
-.link-btn:hover, footer>div>a:hover {
-    color: rgb(0, 204, 255);
-    border: solid .1rem rgb(0, 204, 255);
+.link-btn:hover {
+    color: rgba(230, 89, 230, 0.842);
+    border: solid .1rem rgba(230, 89, 230, 0.842);
     border-radius: .3rem;
 }
 
@@ -58,66 +58,82 @@ a {
 /* removes blue line underneath a links */
 a:-webkit-any-link{
     text-decoration:none !important;
+
 }
 
 
-/* PAGE BODY ITEMS */
-img.card-img-top {
-    margin: 0 0 !important;
-}
+
+/* HOME PAGE */
+
 
 /* main page container */
 .container, .container-sm {
-    margin:5% auto;    
+    margin: 0 auto 5% auto;
     border-radius: 1rem;
+}
+
+/* welcome header on home page */
+.index-row-1 {
+    margin: 1rem auto;
     text-align: center;
 }
-.index-row-1 {
-    margin: 0 auto;
-}
+
+/* biography and portrait container */
 .index-row-2, .contact-row-2 {
     padding: 1rem;
     border-radius: .3rem;
+    text-align: left;
 }
+
 .portrait {
     margin: 0 1rem 0 0;
     float: left;
 }
 
+#skills {
+    text-decoration: underline;
+}
+
+.list {
+    text-align: left;
+}
+
+/* PORTFOLIO PAGE */
 
 
-/* PORTFOLIO PAGE ITEMS */
-.title-row {
-    width: 98%;
-    border-radius: .3rem;
-    margin: 1rem auto;
-    padding: 1rem;
+.about-container {
+    margin-top: 0;
 }
 
 .portfolio-card-l {
-    padding:1rem .5rem .5rem 1rem;
+    padding:1rem 2rem;
 }
 
 .portfolio-card-r {
-    padding:1rem 1rem .5rem .5rem;
+    padding:1rem 2rem;
 }
 
 .portfolio-link {
-    color: rgba(230, 89, 230, 0.842);
+    color: rgb(0, 204, 255);
     text-decoration: underline;
 }
 
 .card-img-top {
+    margin: 0 0 !important;
     opacity:.8;
 }
 
 .card-img-top:hover {
     opacity: 1;
-    color: rgb(0, 204, 255);
+    color: rgba(230, 89, 230, 0.842);
     border: solid .3rem rgba(0, 204, 255, .5);
     border-radius: .3rem;
 }
+
+
 /*CONTACT PAGE*/
+
+
 .contact-row {
     width: 80%;
     border-radius: .3rem;
@@ -127,19 +143,5 @@ img.card-img-top {
 
 .contact-item {
     margin: 1rem 0;
-
 }
 
-/* FOOTER ITEMS */
-footer {
-    border-top: rgb(185, 185, 185);
-    text-align: center;
-    position:  static;
-    bottom: 0;
-    width: 100%;
-}
-
-footer>a {
-    text-decoration: none;
-    font-size: .7rem;
-}
