@@ -37,8 +37,11 @@ $(document).ready(function () {
     })
 
     $(document).on('click', '.card-img-top', function () {
-        $(this).parent().next().find('p').slideToggle()
-        $(this).parent().next().find('a').slideToggle()
+        $(this).parent().next().find('div').slideToggle()
+    })
+    $(document).on('click', '#contact-personal', function () {
+        $(this).siblings().slideToggle()
+        // $(this).find('.contact-item').slideToggle()
     })
     initializePage()
 })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,35 +8,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaQuery.css">
     <title>Samuel Fox</title>
 </head>
 
-<body class="d-flex flex-column h-100" style="display: none;">
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="d-flex nav-container">
+<body style="display: none;">
+    <nav class="navbar bg-dark">
+        <div class="nav-container">
+            <a class="nav-link"> <span class="link-btn" id="portfolio-link">Portfolio</span></a>
             <a class="navbar-brand header-name nav-link"><span class="link-btn active" id="about-link">Samuel Fox</span>
             </a>
-            <a class="nav-link"> <span class="link-btn" id="portfolio-link">Portfolio</span></a>
             <a class="nav-link"> <span class="link-btn" id="contact-link">Contact</span></a>
 
         </div>
     </nav>
     <main class="about-container" style="display: none;">
+        <div class="row boarder-top index-row-1">
+            <h1>👋 Welcome 👋</h1>
+        </div>
         <div class="col-12 container">
-            <div class="row boarder-top index-row-1">
-                <h1>hello</h1>
-            </div>
-            <div class="row index-row-2">
+            <div class="row index-row-2 bg-color">
                 <div>
                     <img class="shadow rounded portrait" src="https://i.imgur.com/4F8DJf0.png" width="250"
                         alt="profile picture">
-                    <p>My name is Samuel Fox.
-                        <br>I am a computer sciences student, currently attending the University of Washington's
-                        'Full-Stack-Flex' Coding Bootcamp! I graduated high school in 2008 and enterted the construction
-                        industry.<br>I spent the last decade learning a wide variety of trade skills, mechanics,
-                        engineering and business management. I've been interested in cuircutry and coding since high
-                        school, and am finally taking the plunge to build the knowledge base and start building my
-                        career in the field.
+                    <p>My name is Sam. I am currently attending the University of Washington's
+                        'Full-Stack-Flex' Coding Bootcamp. I spent the last decade learning a variety of trade skills,
+                        mechanics, engineering and business management. I've been interested coding languages since high
+                        school. While pursuing a Bachelor's Degree in computer sciences, I am building the knowledge
+                        base to get my career started in the field.
                     </p>
                 </div>
             </div>
@@ -44,97 +43,66 @@
     </main>
     <main class="portfolio-container" style="display: none;">
         <div class="col-12 container">
-            <div class="row portfolio-row-1">
-                <h1>Porftolio</h1>
-            </div>
             <div class="row row-cols-1 row-cols-md-2 g-4 text-center">
-                <div class="col profile-card-l">
-                    <div class="card p-3 mt-4 rounded">
+                <div class="col portfolio-card-l">
+                    <div class="card p-3 mt-4 rounded bg-color">
                         <a>
                             <img src="https://github.com/samuelfox1/Voicely/raw/dev-branch/mockups/screenshot.png"
                                 class="card-img-top shadow p-3 mb-5 bg-white rounded" alt="Voicely screenshot">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Voicely</h5>
-                            <p class="card-text" style="display: none;">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary" style="display: none;">Go somewhere</a>
+                            <div style="display: none;">
+                                <p class="card-text">Online notepad that recognizes and transcribes
+                                    voice into text, with the ability to parse matching text to emoji. Winner of the
+                                    Best Functionality and People's Choice awards for the Winter 2020 University of
+                                    Washington coding bootcamp. <a class="portfolio-link"
+                                        href="https://github.com/samuelfox1/Voicely" target="_blank">Learn More</a></p>
+                                <a href="https://chomieu.github.io/Voicely/" target="_blank"><span
+                                        class="link-btn active">App</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col profile-card-r">
-                    <div class="card p-3 mt-4 rounded">
+                <div class="col portfolio-card-r">
+                    <div class="card p-3 mt-4 rounded bg-color">
                         <a>
-                            <img src="https://github.com/samuelfox1/Voicely/raw/dev-branch/mockups/screenshot.png"
-                                class="card-img-top shadow p-3 mb-5 bg-white rounded" alt="Project screenshot">
+                            <img src="https://github.com/samuelfox1/Weather-e-Port/blob/main/Assets/ScreenShots/01-LaptopView-danger-UV.png?raw=true"
+                                class="card-img-top shadow p-3 mb-5 bg-white rounded" alt="Weather-e-port screenshot">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Project</h5>
-                            <p class="card-text" style="display: none;">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary" style="display: none;">Go somewhere</a>
+                            <h5 class="card-title">Weather e.Port</h5>
+                            <div style="display: none;">
+                                <p class="card-text">Enter a location and check the current
+                                    weatherand 5 day forecast. Also reports today's UV-index, color coded to help you
+                                    stay safe out there.Works anywhere worlwide!
+                                    <a class="portfolio-link" href="https://github.com/samuelfox1/Weather-e-Port"
+                                        target="_blank">Learn More</a>
+                                </p>
+                                <a href="https://samuelfox1.github.io/Weather-e-Port/" target="_blank"><span
+                                        class="link-btn active">App</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col profile-card-l">
-                    <div class="card p-3 mt-4 rounded">
+                <div class="col portfolio-card-l">
+                    <div class="card p-3 mt-4 rounded bg-color">
                         <a>
-                            <img src="https://github.com/samuelfox1/Voicely/raw/dev-branch/mockups/screenshot.png"
-                                class="card-img-top shadow p-3 mb-5 bg-white rounded" alt="Project screenshot">
+                            <img src="https://i.imgur.com/hUpSwBD.png"
+                                class="card-img-top shadow p-3 mb-5 bg-white rounded" alt="Voicely screenshot">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Project</h5>
-                            <p class="card-text" style="display: none;">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary" style="display: none;">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col profile-card-r">
-                    <div class="card p-3 mt-4 rounded">
-                        <a>
-                            <img src="https://github.com/samuelfox1/Voicely/raw/dev-branch/mockups/screenshot.png"
-                                class="card-img-top shadow p-3 mb-5 bg-white rounded" alt="Project screenshot">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Project</h5>
-                            <p class="card-text" style="display: none;">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary" style="display: none;">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col profile-card-l">
-                    <div class="card p-3 mt-4 rounded">
-                        <a>
-                            <img src="https://github.com/samuelfox1/Voicely/raw/dev-branch/mockups/screenshot.png"
-                                class="card-img-top shadow p-3 mb-5 bg-white rounded" alt="Project screenshot">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Project</h5>
-                            <p class="card-text" style="display: none;">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary" style="display: none;">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col profile-card-r">
-                    <div class="card p-3 mt-4 rounded">
-                        <a>
-                            <img src="https://github.com/samuelfox1/Voicely/raw/dev-branch/mockups/screenshot.png"
-                                class="card-img-top shadow p-3 mb-5 bg-white rounded" alt="Project screenshot">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Project</h5>
-                            <p class="card-text" style="display: none;">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary" style="display: none;">Go somewhere</a>
+                            <h5 class="card-title">Daily Planner</h5>
+                            <div style="display: none;">
+                                <p class="card-text">Stay on track of each day with this handy schedule app. Enter the
+                                    taks for each hour and follow along as the colors change over time. A grey colored
+                                    box indicates a past time slot, red indicates the current and green is the future.<a
+                                        class="portfolio-link" href="https://github.com/samuelfox1/Daily-Planner"
+                                        target="_blank">Learn
+                                        More</a></p>
+                                <a href="https://samuelfox1.github.io/Daily-Planner/" target="_blank"><span
+                                        class="link-btn active">App</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,36 +111,33 @@
     </main>
     <main class="contact-container" style="display: none;">
         <div class="col-12 container">
-            <div class="row boarder-top contact-row-1">
-                <h1>Contact me</h1>
+            <div class="contact-row">
+                <a href="https://www.linkedin.com/in/samuel-fox-tacoma/" target="_blank"><span class="link-btn">Linked
+                        in</span></a>
             </div>
-            <div class="row contact-row-2">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control shadow p-3 mb-5 bg-white rounded" placeholder="Name"
-                        aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control shadow p-3 mb-5 bg-white rounded" placeholder="email"
-                        aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control shadow p-3 mb-5 bg-white rounded" placeholder="mobile"
-                        aria-describedby="basic-addon1">
-                </div>
+            <div class="contact-row">
+                <a href="https://github.com/samuelfox1" target="_blank"><span class="link-btn">GitHub</span></a>
             </div>
-            <div class="row contact-row-2">
-                <textarea class="form-control shadow p-3 mb-5 bg-white rounded" Placeholder="Message"></textarea>
-            </div>
-            <div class="row d-flex justify-content-center align-items-center contact-row-2 ">
-                <button type="button" class="btn btn-secondary btn-lg button-color ">send
-                </button>
+            <div class="contact-row">
+                <a href="#" id="contact-personal"><span class="link-btn">More</span></a>
+                <div class="contact-row" style="display: none;">
+                    <div class="contact-item">
+                        <a href="tel:+2534486572" class="contact-item portfolio-link">(253) 448-6572</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="mailto:samueljasonfox@gmail.com"
+                            class="contact-item portfolio-link">samueljasonfox@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://drive.google.com/file/d/10kjsOmGSi3TgM3Uk8hP5pt1FtsFun1U1/view?usp=sharing"
+                            target="_blank" class="contact-item portfolio-link">Resume</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
     <footer class="footer mt-auto py-3" style="display: none;">
-        <a href="https://github.com/samuelfox1" target="_blank"><span class="link-btn">GitHub</span></a>
-        <a href="https://www.linkedin.com/in/samuel-fox-tacoma/" target="_blank"><span class="link-btn">Linked
-                in</span></a>
     </footer>
 </body>
 
