@@ -33,7 +33,7 @@
 
 * [Check it out!](https://samuelfox1.github.io/Personal-Portfolio/) 
 
-![Screenshot](Assets/images/screenshot.png)
+![Screenshot](./assets/images/screenshot.png)
 
 <br>
 
