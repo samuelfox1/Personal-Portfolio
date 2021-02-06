@@ -105,6 +105,10 @@ a:-webkit-any-link{
     margin-top: 0;
 }
 
+.bg-color2 {
+    background-color: rgb(43, 43, 43) !important;
+}
+
 .portfolio-card-l {
     padding:1rem 2rem;
 }
